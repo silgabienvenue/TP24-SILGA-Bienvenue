@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    font-family: 'lora', sans-serif;
+     background-position: center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    background-image: url(images/clic8.jpg);
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    position:fixed; 
+   background-color: blue;
+   width: 100%;
+}
+.navbar{
+    margin-left: 400px;
+    padding: auto;
+}
+.navbar a{
+    text-decoration: none;
+    color:white;
+   margin: 15px;
+   font-weight: 600;
+}
+.navbar a:hover{
+    background-color:antiquewhite;
+    border-style: groove;
+    border-width:10px;
+    border-color:red;
+}
+.logo{
+    max-width: 300px;
+}
+.logo img{
+   width: 100px; 
+}
+.content{
+    margin: 200px 0 10px 100px;
+    text-align: center; 
+}
+ .content p{
+background-color: blue;
+ color:white;
+ font-size: 30px;
+ width: 1000px;
+padding: 10px;
+}
+nav button{
+    padding: 2px;
+    border-radius: 20px;
+    background-color:yellow;
+}
+.navbar button:hover{
+    border-style: groove;
+    border-width:10px;
+    border-color: red;
+}
+
+
+/* section2 */
+/* caroussel */
+.section-2{
+    display: flex;
+    margin: 10px 0px 30px 50px;
+}
+.section-2 #carousel{
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+}
+.section-2 .defils{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    animation-duration: 15s;
+    animation-name: mesImages;
+    animation-iteration-count: infinite; 
+    width: 500px;
+    height: 300px;
+}
+.section-2 .defils img{
+    width: 500px;
+    height: 300px;
+    margin: 2px;
+} 
+ @keyframes mesImages{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-500px);
+    }
+    20%{
+        transform: translateX(-1000px);
+    }
+    30%{
+        transform: translateX(-1500px);
+    }
+    40%{
+        transform: translateX(-2000px);
+    }
+    50%{
+        transform: translateX(-2500px);
+    }
+    60%{
+        transform: translateX(-3000px);
+    }
+    70%{
+        transform: translateX(-3500px);
+    }
+    80%{
+        transform: translateX(-4000px);
+    }
+    90%{
+        transform: translateX(-4500px);
+    }
+    100%{
+        transform: translateX(-5000px);
+    }
+}
+    /* bloctext */
+    .bloc-text{
+        padding-left: 50px;
+        background-color: green;
+    }
+.bloc-text .for{
+    display: flex;
+}
+.bloc-text h3{
+    font-family:'playfair', sans-serif;
+    text-align: center;
+    color: brown;
+}
+.bloc-text .for h4{
+    color: brown;
+    margin-left: 10px;
+}
+.bloc-text .for li{
+    list-style:none;
+    color: black;
+    font-size: 22px;
+  
+}
+
+.section-3{
+    margin: 50px;
+    padding: 30px;
+}
+.for{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+.for h3{
+    font-size: 20px;
+}
+.for .list{
+    width: 300px;
+    justify-content: center;
+    margin-left: 50px;
+    
+}
+.for .list ul li{
+   list-style: none;
+   font-size: 17px;
+   text-align: left;
+   line-height: 30px;
+   
+    
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: rgb(231, 170, 113);
+    display: flex;
+    flex-direction: row;
+    padding: 70px;
+    justify-content: center;
+    text-align: left;
+    margin: 30px;
+}
+footer .footer{
+    margin-left: 100px;
+    line-height: 20px;
+}
+footer img{
+    width: 100px;
+    height: 55px;
+}
+footer .links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+footer .links a{
+    text-decoration: none;
+    color: rgb(26, 82, 28);
+    line-height: 35px;
+    font-weight: 500;
+}
+footer .links a:hover{
+border-radius: 20px solid red;
+background-color: aqua;
+}
+footer .icon{
+    font-size: 22px;
+}
+footer .icon .bi-twitter{
+    color: rgb(0, 204, 255);
+}
+footer .icon .bi-facebook{
+    color: rgb(0, 4, 255);
+}
+footer .icon .bi-youtube{
+    color: red;
+}
+footer .icon .bi-linkedin{
+    color: rgb(0, 110, 255);
+}
+footer .icon .bi-instagram{
+    color: green;
+}

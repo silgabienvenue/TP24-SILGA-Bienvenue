@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-family: 'lora', sans-serif;
+     background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    background-color:rgb(255, 251, 0);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    /* position: absolute; */
+   background-color: red;
+}
+.navbar{
+    margin-left: 400px;
+    padding: auto;
+}
+.navbar a{
+    text-decoration: none;
+    color:white;
+   margin: 15px;
+   font-weight: 600;
+}
+.navbar a:hover{
+    background-color:antiquewhite;
+    border-style: groove;
+    border-width:10px;
+    border-color: blue;
+}
+.logo{
+    max-width: 300px;
+}
+.logo img{
+   width: 100px; 
+}
+.content{
+    margin: 200px 0 10px 100px;
+    text-align: center; 
+}
+ .content p{
+background-color: red;
+ color:white;
+ font-size: 30px;
+ width: 1000px;
+padding: 10px;
+}
+nav button{
+    padding: 2px;
+    border-radius: 20px;
+    background-color:rgb(235, 235, 53);
+}
+.navbar button:hover{
+    border-style: groove;
+    border-width:10px;
+    border-color: blue;
+}
+section{
+    justify-content: center;
+    width: 80%;
+    margin: 100px;
+    
+}
+h1{
+    text-align: center;
+    color: red;
+}
+h4, h6{
+    text-align: left;
+    margin: 30px;
+}
+section img{
+    width: 500px;
+    height: 400px;
+    margin-left: 300px;
+}
+/* footer */
+footer{
+    width: 100%;
+    background-color: rgb(231, 170, 113);
+    display: flex;
+    flex-direction: row;
+    padding: 70px;
+    justify-content: center;
+    text-align: left;
+    margin: 30px;
+}
+footer .footer{
+    margin-left: 100px;
+    line-height: 20px;
+}
+footer img{
+    width: 100px;
+    height: 55px;
+}
+footer .links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+footer .links a{
+    text-decoration: none;
+    color: rgb(26, 82, 28);
+    line-height: 35px;
+    font-weight: 500;
+}
+footer .links a:hover{
+border-radius: 20px solid red;
+background-color: aqua;
+}
+footer .icon{
+    font-size: 22px;
+}
+footer .icon .bi-twitter{
+    color: rgb(0, 204, 255);
+}
+footer .icon .bi-facebook{
+    color: rgb(0, 4, 255);
+}
+footer .icon .bi-youtube{
+    color: red;
+}
+footer .icon .bi-linkedin{
+    color: rgb(0, 110, 255);
+}
+footer .icon .bi-instagram{
+    color: green;
+}

@@ -1,20 +1,23 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 header{
     font-family: 'lora', sans-serif;
-    background-image: url(images/clic.jpg);
      background-position: center;
     background-size: cover;
-    height: 600px;
+    height: 700px;
     width: 100%;
+    background-image: url(images/clic.jpg);
+    overflow: hidden;
 }
 nav{
-    background-color: rgb(229, 229, 153);
     display: flex;
     flex-direction: row;
-    /* position: fixed; */
+    position:fixed; 
+   background-color: blue;
+   width: 100%;
 }
 .navbar{
     margin-left: 400px;
@@ -22,7 +25,7 @@ nav{
 }
 .navbar a{
     text-decoration: none;
-    color:brown;
+    color:white;
    margin: 15px;
    font-weight: 600;
 }
@@ -30,7 +33,7 @@ nav{
     background-color:antiquewhite;
     border-style: groove;
     border-width:10px;
-    border-color: orangered;
+    border-color:red;
 }
 .logo{
     max-width: 300px;
@@ -43,8 +46,8 @@ nav{
     text-align: center; 
 }
  .content p{
- background-color: rgb(229, 229, 153);
- color: brown;
+background-color: blue;
+ color:white;
  font-size: 30px;
  width: 1000px;
 padding: 10px;
@@ -52,20 +55,27 @@ padding: 10px;
 nav button{
     padding: 2px;
     border-radius: 20px;
+    background-color:yellow;
 }
 .navbar button:hover{
-    background-color:antiquewhite;
     border-style: groove;
     border-width:10px;
-    border-color: orangered;
+    border-color: red;
 }
+
 
 /* section1 */
 .section-1{
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    background-color: blueviolet;
+    margin: 50px;
+}
+ section h1{
+    color: red; 
+    text-align: center;
 }
 .files{
     display: flex;
@@ -76,13 +86,12 @@ nav button{
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
-    overflow: hidden;
-    background-color: aquamarine;
+    overflow: hidden; ;
 }
 .file img{
     width: 100%;
     display: block;
-    height: 450px; 
+    height: 300px; 
     margin: 20px;
 }
 .layer{
@@ -92,7 +101,7 @@ nav button{
     top: 0;
     right: 0;
     position: absolute;
-    transition: 0.5s;
+    transition: 5s;
 }
 .layer:hover{
     background:rgba(243, 43, 43, 0.6)
@@ -107,80 +116,184 @@ nav button{
     transform: translateX(-50%);
     position: absolute;
     opacity: 0;
-    transition: 0.5s;
+    transition: 5s;
 }
 .layer:hover h2{
-    bottom:49% ;
+    bottom:50% ;
     opacity: 1;
 }
+.section-2 {
+ width: 100%; 
+}
 
-/* section2 */
-/* caroussel */
-.section-2{
-    display: flex;
-    margin: 10px 0px 30px 50px;
-}
-.section-2 #carousel{
-    width: 500px;
-    height: 300px;
-    overflow: auto;
-}
-.section-2 .defils{
+.section-2 .card-groups{
+    margin: 20px;
     display: flex;
     flex-direction: row;
-    margin-left: 5px;
-    animation-duration: 15s;
-    animation-name: mesImages;
-    animation-iteration-count: infinite; 
-    width: 500px;
-    height: 300px;
+    justify-content: center;
 }
-.section-2 .defils img{
-    width: 500px;
-    height: 300px;
-    margin: 2px;
-} 
- @keyframes mesImages{
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(-500px);
-    }
-    50%{
-        transform: translateX(-1000px);
-    }
-    75%{
-        transform: translateX(-1500px);
-    }
-    100%{
-        transform: translateX(0);
-    }
+.section-2 .card-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-    /* bloctext */
-    .bloc-text{
-        margin-left: 50px;
-        background-color: rgb(80, 145, 243);
-    }
-.bloc-text .for{
-    display: flex;
-}
-.bloc-text h3{
-    font-family:'playfair', sans-serif;
-    text-align: center;
-    color: brown;
-}
-.bloc-text .for h4{
-    color: brown;
-    margin-left: 10px;
-}
-.bloc-text .for li{
-    list-style:none;
-    color: black;
-    font-size: 20px;
-  
+.section-2 .card-group .card{
+    background-color: yellow;
+    width: 320px;
+    margin: 10px;
+    padding: 10px;
 }
 
-.card-groups{
-    margin: 20px;
+.section-2 .card-group .card img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+.section-2 .card-groups .imgs{
+    margin: 5px;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.section-2 .card-groups .imgs img{
+    width: 180px;
+    height: 150px;
+    margin: 5px;
+}
+
+/* section3 */
+.section-3{
+    width: 100%;
+
+}
+.section-3 .card-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin: 70px;
+    /* background-color: red; */
+}
+.section-3 .card-group .card{
+   width: 500px;
+   height: 330px;
+   margin: 10px;
+   border-radius: 10px;
+   background-color: rgb(0, 140, 255);
+}
+.section-3 .card-group .card img{
+   width: 345px;
+   height: 200px;
+}
+.section-3 .card-group .card p{
+   width: 400px;
+   font-size: 17px;
+
+ } 
+
+/* section4 */
+.section-4{
+    width: 100%;
+    background-color: green;
+}
+.section-4 .card-group{
+    width:80%; 
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 50px 0 100px 50px;
+    padding: 30px;
+}
+.section-4 .card-group .card-img{
+    width: 40%;
+}
+.section-4 .card-group .card-img img{
+    width: 500px;  
+    height: 300px;
+}
+
+.section-4 .card-group .cards {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    padding-right: 100px;
+    width: 50%;
+
+}
+.section-4 .card-group .cards .inputs{
+    display: flex;
+    flex-direction: column;
+}
+.section-4 .card-group .cards .put{
+   margin: 5px;
+}
+.section-4 .card-group .cards input, select{
+    width: 300px;
+    height: 50px;
+}
+.section-4 .card-group .cards input:hover{
+   background-color: pink;
+   box-shadow: 50px 50px 50px pink;
+}
+.section-4 .card-group .cards select:hover{
+   background-color: pink;
+   box-shadow: 50px 50px 50px pink;
+}
+.section-4 .card-group .cards .inputs .put input:nth-child(5){
+    width: 350px;
+    height: 100px;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: rgb(231, 170, 113);
+    display: flex;
+    flex-direction: row;
+    padding: 70px;
+    justify-content: center;
+    text-align: left;
+    margin: 30px;
+}
+footer .footer{
+    margin-left: 100px;
+    line-height: 20px;
+}
+footer img{
+    width: 100px;
+    height: 55px;
+}
+footer .links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+footer .links a{
+    text-decoration: none;
+    color: rgb(26, 82, 28);
+    line-height: 35px;
+    font-weight: 500;
+}
+footer .links a:hover{
+border-radius: 20px solid red;
+background-color: aqua;
+}
+footer .icon{
+    font-size: 22px;
+}
+footer .icon .bi-twitter{
+    color: rgb(0, 204, 255);
+}
+footer .icon .bi-facebook{
+    color: rgb(0, 4, 255);
+}
+footer .icon .bi-youtube{
+    color: red;
+}
+footer .icon .bi-linkedin{
+    color: rgb(0, 110, 255);
+}
+footer .icon .bi-instagram{
+    color: green;
 }
