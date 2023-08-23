@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    font-family: 'lora', sans-serif;
+     background-position: center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    background-color: black;
+    /* background-image: url(images/clic.jpg); */
+    background-size: 100%;
+    filter: alpha(opacity=100);
+    overflow: hidden;
+    
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    position:fixed; 
+   background-color:red;
+   width: 100%;
+}
+.navbar{
+    margin-left: 400px;
+    padding: auto;
+}
+.navbar a{
+    text-decoration: none;
+    color:white;
+   margin: 15px;
+   font-weight: 600;
+}
+.navbar a:hover{
+    background-color:antiquewhite; 
+    border-style: groove;
+    border-width:10px;
+    color: black;
+    border-color:deepskyblue;
+}
+.logo{
+    max-width: 300px;
+}
+.logo img{
+   width: 100px; 
+}
+.content{
+    margin: 200px 0 10px 100px;
+    text-align: center; 
+}
+ .content p{
+background-color: red;
+ color:white;
+ font-size: 30px;
+ width: 1000px;
+padding: 10px 0 10px 0;
+margin-left: 50px;
+}
+nav button{
+    padding: 2px;
+    border-radius: 20px;
+    background-color:yellow;
+}
+.navbar button:hover{
+    border-style: groove;
+    border-width:10px;
+    border-color: red;
+}
+.section-1{
+    width: 80%;
+}
+.section-1 .image{
+    margin: 50px;
+ 
+}
+.forms
+/* .btn-2{
+    border-style: none;
+    padding-right: 30px;
+
+} */
