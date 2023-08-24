@@ -9,7 +9,8 @@ header{
     background-size: cover;
     height: 700px;
     width: 100%;
-    background-image: url(images/clic.jpg);
+    background-color: deepskyblue;
+    /* background-image: url(images/clic.jpg); */
     background-size: 100%;
     filter: alpha(opacity=100);
     overflow: hidden;
@@ -19,7 +20,7 @@ nav{
     display: flex;
     flex-direction: row;
     position:fixed; 
-   background-color:red;
+   background-color:yellow;
    width: 100%;
 }
 .navbar{
@@ -28,7 +29,7 @@ nav{
 }
 .navbar a{
     text-decoration: none;
-    color:white;
+    color:black;
    margin: 15px;
    font-weight: 600;
 }
@@ -50,8 +51,8 @@ nav{
     text-align: center; 
 }
  .content p{
-    background-color: red;
- color:white;
+    background-color: yellow;
+ color:black;
  font-size: 30px;
  width: 1000px;
 padding: 10px 0 10px 0;
@@ -60,12 +61,12 @@ margin-left: 50px;
 nav button{
     padding: 2px;
     border-radius: 20px;
-    background-color:yellow;
+    background-color:deepskyblue;
 }
 .navbar button:hover{
-    border-style: groove;
+    /* border-style: groove; */
     border-width:10px;
-    border-color: red;
+    /* border-color: red; */
 }
  .forms{
     display: flex;
@@ -265,7 +266,7 @@ nav button{
 /* section4 */
 .section-4{
     width: 100%;
-    background-color: green;
+    background-color: deepskyblue;
 }
 .section-4 .card-group{
     width:80%; 
@@ -316,6 +317,66 @@ nav button{
     height: 100px;
 }
 
+.clic{
+    width: 100%;
+}
+.clic .clic-img{
+    justify-content: center;
+    display: flex;
+}
+.clic .clic-img .clic-1{
+    margin-left: 15px;
+}
+.clic .clic-1 img{
+    width: 300px;
+    height: 300px;
+    /* position: relative; */
+    z-index: 1;
+}
+.clic .clic-1 p{
+    padding: 20px;
+    color: white;
+    justify-content: center;
+    background-color: red;
+    width: 130px;
+    position:relative ;
+    bottom:80px;
+    z-index: 2;
+}
+
+.blog{
+    width: 100%;
+}
+.blog .bloc{
+    background-color: white;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.blog .bloc .card{
+    /* padding: 5px; */
+    display: flex;
+    /* width: 400px;
+    height: 100px; */
+}
+.blog .bloc .card .text{
+   font-size: 20px;
+   width: 300px;
+
+}
+.blog .bloc .card a{
+   font-size: 20px;
+   width: 300px;
+    text-decoration: none;
+    color:rgb(75, 58, 88);
+    font-weight: 600;
+}
+
+.blog img{
+    width: 150px;
+    height: 100px;
+    padding: 5px;
+}
 
 /* footer */
 footer{
